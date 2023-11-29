@@ -1,0 +1,46 @@
+body {
+  background-image: url('./background_quinta_secao.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+div {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #d72082;
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    div{
+        padding: 50px;
+        max-width: 800px;
+    }
+  h1 {
+    font-size: 60px;
+  }
+}
