@@ -1,5 +1,5 @@
 body {
-  background-image: url('./background_quinta_secao.png');
+  background-image: url('assets/background_quinta_secao.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -38,7 +38,7 @@ h1 {
   font-size: 40px;
 }
 
-a {
+.back_btn {
   border: none;
   background-color: #d72082;
   font-weight: bold;

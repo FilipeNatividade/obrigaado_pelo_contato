@@ -11,13 +11,24 @@
 
 <body>
 
-    <img src="logo.png" alt="logo Bindflow">
+    <img src="assets/logo.png" alt="logo Bindflow">
 
     <div>
 
         <h1>Obrigado pelo contato!</h1>
-        <a href="https://site-principal-bindflow.vercel.app/">Voltar</a>
+        <button class="back_btn" onclick="voltar()">Voltar</button>
     </div>
 </body>
+
+<script>
+    function voltar() {
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            var paginaAnterior = document.referrer;
+            window.location.href = paginaAnterior || 'index.html';
+        }
+    }
+</script>
 
 </html>
